@@ -4,8 +4,6 @@ import qrcode from 'qrcode-terminal';
 import sleep from './utils/sleep.js';
 import { replySingleMessage } from './libs/gpt3.5.mjs';
 import { generateImage } from './libs/dalle.mjs';
-import dotenv from 'dotenv';
-dotenv.config({ path: './.env' });
 
 const client = new Client({
 	authStrategy: new LocalAuth(),
